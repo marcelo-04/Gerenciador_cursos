@@ -7,3 +7,5 @@ Projeto Alura
 + Listas de objetos
 + Relacionamento com coleções
 + Mais préticas com relacionamentos
++ O poder dos sets
++ Aplicando o Set no modelo
