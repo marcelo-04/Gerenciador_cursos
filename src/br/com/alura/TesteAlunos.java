@@ -33,9 +33,9 @@ public class TesteAlunos {
 			System.out.println(aluno);
 		});
 		
-		List<String> alunosEmLista = new ArrayList<>(alunos);
-		
 		System.out.println(alunos);
+		
+		List<String> alunosEmLista = new ArrayList<>(alunos);
 	}
 
 }
