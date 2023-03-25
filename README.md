@@ -9,3 +9,5 @@ Projeto Alura
 + Mais préticas com relacionamentos
 + O poder dos sets
 + Aplicando o Set no modelo
++ Equals e hasdcode
++ Outros sets e iterators
