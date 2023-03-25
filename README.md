@@ -11,3 +11,5 @@ Projeto Alura
 + Aplicando o Set no modelo
 + Equals e hasdcode
 + Outros sets e iterators
++ Qual Collection usar
++ Mapas
