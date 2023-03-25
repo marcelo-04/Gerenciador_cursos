@@ -1,5 +1,9 @@
 package br.com.alura;
 
+import java.util.Iterator;
+import java.util.Set;
+import java.util.Vector;
+
 public class TestaCursoComAluno {
 
 	public static void main(String[] args) {
@@ -12,7 +16,7 @@ public class TestaCursoComAluno {
 		javaColecoes.adiciona(new Aula("Modelando com coleções", 24));
 		
 		Aluno a1 = new Aluno("Rodrigo Turini", 34672);
-		Aluno a2 = new Aluno("Gulherme Silveiras", 5617);
+		Aluno a2 = new Aluno("Guilherme Silveiras", 5617);
 		Aluno a3 = new Aluno("Mauricio Aniche", 17645);
 		
 		javaColecoes.matricula(a1);
@@ -21,9 +25,20 @@ public class TestaCursoComAluno {
 		
 		System.out.println("Todos os alunos matriculado: ");
 		
-		javaColecoes.getAlunos().forEach(a -> {
-			System.out.println(a);
-		});
+//		javaColecoes.getAlunos().forEach(a -> {
+//			System.out.println(a);
+//		});
+		
+		Set<Aluno> alunos = javaColecoes.getAlunos();
+		Iterator<Aluno> iterator = alunos.iterator();
+		
+		while (iterator.hasNext()) {
+			Aluno proximo = iterator.next();
+			System.out.println(proximo);
+			
+		}
+		
+		Vector<Aluno> vetor = new Vector<>();
 		
 		System.out.println("O aluno "+ a1 +" está matriculado?");
 		System.out.println(javaColecoes.estaMatriculado(a1));
